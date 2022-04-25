@@ -42,3 +42,4 @@ sudo service docker status
 
 sudo vi /etc/group
 
+sudo chmod 666 /var/run/docker.sock
