@@ -1,3 +1,12 @@
-"Docker Desktop Installer.exe" install
-Start-Process '.\win\build\Docker Desktop Installer.exe' -Wait install
-start /w "" "Docker Desktop Installer.exe" install
+
+wsl --install -d Ubuntu
+
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+wsl.exe -l -v
+
+wsl.exe --set-version Ubuntu 2
+
+wsl.exe --set-default-version 2
