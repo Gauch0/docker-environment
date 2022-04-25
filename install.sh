@@ -36,3 +36,9 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 sudo apt install maven
 mvn --version
 
+sudo service docker start
+
+sudo service docker status
+
+sudo vi /etc/group
+
